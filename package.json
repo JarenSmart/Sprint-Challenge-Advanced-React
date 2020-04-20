@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "@emotion/core": "^10.0.28",
     "axios": "^0.19.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.3",
