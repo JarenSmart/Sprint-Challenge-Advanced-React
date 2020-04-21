@@ -27,7 +27,7 @@ class App extends React.Component {
         <main>
           <ToggleDarkMode />
           <h1>Women's World Cup Top Players Searched</h1>
-          <div>
+          <div data-testid="players-info">
             {this.state.playerData.map((player) => {
               return (
                 <PlayerCard

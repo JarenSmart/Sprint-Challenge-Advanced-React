@@ -5,6 +5,36 @@
   margin: 0;
 }
 
+/*Player Card Styles*/
+
+.player-container {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.player-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  flex-wrap: wrap;
+  background: #191b21;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.player-card {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+/*Dark Mode Styles*/
 .toggle-container {
   align-items: center;
   border-bottom: 1px solid rgb(221, 221, 221);
