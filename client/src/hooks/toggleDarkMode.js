@@ -1,27 +1,26 @@
 import React from "react";
-import DarkMode from "./DarkMode";
+import DarkMode from "../hooks/DarkMode";
 
-const ToggleDark = () => {
-  const [darkMode, setDarkMode] = DarkMode(false);
-  const Toggle = (e) => {
+const ToggleDarkMode = () => {
+  const [dark, setDark] = DarkMode(false);
+  const toggleMode = (e) => {
     e.preventDefault();
-    setDarkMode(!darkMode);
+    setDark(!dark);
   };
 
   return (
-    <div>
-      <nav>
-        <div className="toggle-container">
-          <button
-            onClick={Toggle}
-            className={darkMode ? "toggle-true" : "toggle-false"}
-          >
-            Toggle Mode
-          </button>
-        </div>
-      </nav>
-    </div>
+    <nav className="toggle-container">
+      <span style={{ color: dark ? "yellow" : "grey", fontSize: 25 }}>☀︎</span>
+      <div className="dark-mode-toggle">
+        <div
+          onClick={toggleMode}
+          className={dark ? "toggle toggled" : "toggle"}
+        ></div>
+        <h6>{dark ? "Need Light?" : "Too Bright?"}</h6>
+      </div>
+      <span style={{ color: dark ? "grey" : "black", fontSize: 25 }}>☾</span>
+    </nav>
   );
 };
 
-export default ToggleDark;
+export default ToggleDarkMode;

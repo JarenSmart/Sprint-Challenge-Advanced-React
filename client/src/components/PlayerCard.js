@@ -10,12 +10,4 @@ const PlayerCard = ({ name, country, searches, id }) => {
   );
 };
 
-//FOR APP.JS
-
-// <PlayerCard
-//   name={this.state.playerData.name}
-//   country={this.state.playerData.country}
-//   searches={this.state.playerData.searches}
-// />;
-
 export default PlayerCard;
